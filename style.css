@@ -1,0 +1,128 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: 'Poppins', sans-serif;
+min-height: 100vh;
+background: linear-gradient(135deg, #ffe4ec, #e0f7ff, #eaffd6);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.app {
+width: 90%;
+max-width: 900px;
+padding: 20px;
+border-radius: 25px;
+background: #ffffff;
+box-shadow: 0 10px 0 #ddd;
+border: 3px solid #eee;
+}
+
+.header {
+text-align: center;
+}
+
+.header h1 {
+font-size: 2rem;
+}
+
+.subtitle {
+color: #777;
+}
+
+.output-box {
+margin: 20px 0;
+padding: 20px;
+border-radius: 20px;
+background: #fff6b7;
+border: 3px dashed #ffcc00;
+text-align: center;
+font-weight: 600;
+}
+
+.controls {
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+.btn {
+padding: 12px 25px;
+border-radius: 50px;
+border: none;
+cursor: pointer;
+font-weight: 600;
+transition: 0.2s;
+}
+
+.truth {
+background: #a8f0c6;
+box-shadow: 0 5px 0 #5bc48d;
+}
+
+.dare {
+background: #ffb3d9;
+box-shadow: 0 5px 0 #ff69b4;
+}
+
+.btn:active {
+transform: translateY(5px);
+box-shadow: none;
+}
+
+.game-area {
+margin-top: 25px;
+height: 300px;
+position: relative;
+border-radius: 20px;
+background: #e6f7ff;
+border: 4px solid #b3e0ff;
+}
+
+.player {
+position: absolute;
+background: #fff;
+padding: 5px 10px;
+border-radius: 10px;
+border: 2px solid #ccc;
+}
+
+.top { top: 10px; left: 50%; transform: translateX(-50%); }
+.bottom { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.left { left: 10px; top: 50%; transform: translateY(-50%); }
+.right { right: 10px; top: 50%; transform: translateY(-50%); }
+
+.bottle-container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#bottle {
+width: 90px;
+cursor: pointer;
+transition: transform 1s ease-out;
+}
+
+#bottle:hover {
+transform: scale(1.2) rotate(10deg);
+}
+
+.instructions {
+text-align: center;
+margin-top: 15px;
+font-weight: 500;
+}
+
+.footer {
+text-align: center;
+margin-top: 15px;
+font-size: 14px;
+}
